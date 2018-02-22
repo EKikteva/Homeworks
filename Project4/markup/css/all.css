@@ -426,11 +426,382 @@ and (max-device-width : 1024px) {
         max-width: 100%;
         height: 100%;
     }
+    /*-----------tabs-------*/
+    .tabs{
+        margin-bottom: 100px;
+    }
+    .tabset{
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-left: 15px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .tabset li{
+        display: inline-block;
+        line-height: 32px;
+    }
+    .tabset li:first-child{
+        border-width: 1px 1px 0;
+    }
 
+    .tabset a{
+        display: block;
+        padding: 0 19px;
+        background: #ffffff;
+        color: #646464;
+    }
+    .tabset .active a{
+        background: #fd926d;
+        color: #ffffff;
 
+    }
+    .tabset a:hover{
+        background: #e2b2a1;
+    }
+    .tab{
+        display: none;
+    }
+    .tab.active{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        background-color: #fd926d;
+    }
+    .tab.active div{
+        transition: all 1s ease;
+        —moz-transition: all 1s ease;
+        —webkit-transition: all 1s ease;
+        —o-transition: all 1s ease;
+    }
+    /*-----------------------------------------------------------------------*/
+    .tab.active .pointer{
+        display: none;
+    }
+    .tab.active div:hover{
+        —moz-transform: scale(1.1);
+        —webkit-transform: scale(1.1);
+        —o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .tab.active div{
+        height: auto;
+        background-color: #f7f7f7;
+        padding-bottom: 20px;
+    }
+    .tab.active div p{
+        color: #373737;
+        text-transform: uppercase;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    .tab.active div .prise {
+        font: 18px Arial, Helvetica, sans-serif;
+    }
+    .tab.active div a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        font-size: 12px;
+        background: #fd926d;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        border-bottom: 2px #dd6b44 solid;
+    }
+    .tab.active div a:hover{
+        color: #000000;
+    }
+    .active-item5, .active-item4{
+        display: none;
+    }
+    /*---------discount------*/
+    .discount{
+        position: relative;
+    }
+    .discount-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+        height: auto;
+        padding-top: 70px;
+        margin: 20px 15px;
+        border-top: 1px #d8d8d8 solid;
+    }
+    .discount .disc-img{
+        position: absolute;
+        top: -80px;
+        right: 40%;
+    }
+    .discount-list li{
+        height: auto;
+        background-color: #f7f7f7;
+        margin: 30px 0;
+        padding-bottom: 15px;
+    }
+    .discount-list li p{
+        color: #373737;
+        text-transform: uppercase;
+        font: 12px Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    .discount-list li .prise{
+        font: 18px Arial, Helvetica, sans-serif;
+    }
+    .discount-list li a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        font-size: 12px;
+        background: #fd926d;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        border-bottom: 2px #dd6b44 solid;
+    }
+    .discount-list li a:hover{
+        color: #000000;
+    }
+    .discount-list li:last-child{
+        display: none;
+    }
+    /*---------brands------*/
+    .brands{
+        position: relative;
+    }
+    .brands ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-around;
+        height: auto;
+        padding:20px 15px;
+        border-top: 1px #d8d8d8 solid;
+        border-bottom: 1px #d8d8d8 solid;
+        margin-bottom: 20px;
+    }
+    .brands p{
+        position: absolute;
+        top: -18px;
+        right: 40%;
+        text-transform: uppercase;
+        font: 15px Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #0d0c0d;
+        font-weight: bold;
+        padding: 10px;
+        background-color: white;
+    }
+    .brands-list li:nth-child(7), .brands-list li:nth-child(8){
+        display: none;
+    }
+    /*---------article------*/
+    article{
+        font: 14px Arial, Helvetica, sans-serif;
+        margin: 20px 15px;
+        text-align: center;
+    }
+    article h2{
+        padding: 15px;
+    }
+    /*-------- carts-------*/
+    .carts{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        background-color: #f7f7f7;
+    }
+    .carts ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        height: auto;
+        padding: 20px;
+    }
+    .carts ul li{
+        padding: 10px;
+    }
+    .carts p{
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #969393;
 
+    }
+    /*-------------------------------footer---------------------*/
+    /*-------------footer-top------------------*/
+    .footer-top{
+        max-width: 1024px;
+        min-width: 768px;
+        height:auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        justify-content:space-between;
+        padding: 30px 15px;
+        background-color: #ededed;
+    }
+   .campaigns, .stores{
+       order: +2;
+       display: flex;
+       justify-content: flex-start;
+       flex-direction: column;
+       width: 23%;
+   }
+    .stores{
+        margin-right: 52%;
+    }
+    .service, .information,
+    .social-list, .secured{
+        width: 23%;
+    }
 
+    .service p{
+        font: 16px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #544f4d;
+    }
+    .service li{
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #8b8887;
+    }
+    .information p{
+        font: 16px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #544f4d;
+    }
+    .information li {
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #8b8887;
+    }
+    .campaigns p{
+        font: 16px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #544f4d;
+    }
+    .campaigns li {
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #8b8887;
+    }
 
+    .stores p{
+        font: 16px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #544f4d;
+    }
+    .stores li {
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #8b8887;
+    }
+    .social-list p{
+        font: 16px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #544f4d;
+    }
+    .social-list .fa {
+        padding: 5px;
+        font-size: 18px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .social-list .fa:hover {
+        opacity: 0.7;
+    }
+    .social-list .fa-twitter {
+        background: #4c4c4b;
+        color: white;
+    }
+
+    .social-list .fa-pinterest {
+        background: #4c4c4b;
+        color: white;
+    }
+    .social-list .fa-facebook {
+        background: #4c4c4b;
+        color: white;
+    }
+    .social-list .fa-youtube {
+        background: #4c4c4b;
+        color: white;
+    }
+    .social-list .fa-tumblr {
+        background: #4c4c4b;
+        color: white;
+    }
+    .social-list .fa-vimeo {
+        background: #4c4c4b;
+        color: white;
+
+    }
+    /*-------------  footer-bottom------------------*/
+    .footer-bottom{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:space-between;
+        height:75px;
+        padding: 0 15px;
+        background-color: #000000;
+        color: #808080;
+        font: 11px Arial, Helvetica, sans-serif;
+        font-style: normal;
+    }
+    .footer-bottom-list ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:flex-start;
+    }
+
+    .footer-bottom-list ul li{
+        padding:0  10px;
+        border-right: 2px #555555 solid;
+    }
+    .footer-bottom-list ul li:last-child{
+        border-right: none;
+    }
+    .footer-bottom-list ul li:first-child{
+        padding:0 10px 0 0;
+    }
+    .footer-bottom-list a{
+        color: #808080;
+        font: 11px Arial, Helvetica, sans-serif;
+        font-style: normal;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:flex-end;
+    }
+    .address a{
+        color: #808080;
+        font: 11px Arial, Helvetica, sans-serif;
+        font-style: normal;
+        padding: 5px 0;
+    }
 
 }
 
@@ -1014,7 +1385,7 @@ and (min-width : 1224px) {
     .discount-list li a:hover{
         color: #000000;
     }
-    /*---------discount------*/
+    /*---------brands------*/
     .brands{
         position: relative;
     }
