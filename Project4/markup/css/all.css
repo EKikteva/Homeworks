@@ -351,18 +351,12 @@ and (max-device-width : 480px) {
     }
     .tab.active div{
         transition: all 1s ease;
-        —moz-transition: all 1s ease;
-        —webkit-transition: all 1s ease;
-        —o-transition: all 1s ease;
     }
     /*-----------------------------------------------------------------------*/
     .tab.active .pointer{
         display: none;
     }
     .tab.active div:hover{
-        —moz-transform: scale(1.1);
-        —webkit-transform: scale(1.1);
-        —o-transform: scale(1.1);
         transform: scale(1.1);
     }
     .tab.active div{
@@ -978,18 +972,13 @@ and (max-device-width : 1024px) {
     }
     .tab.active div{
         transition: all 1s ease;
-        —moz-transition: all 1s ease;
-        —webkit-transition: all 1s ease;
-        —o-transition: all 1s ease;
+
     }
     /*-----------------------------------------------------------------------*/
     .tab.active .pointer{
         display: none;
     }
     .tab.active div:hover{
-        —moz-transform: scale(1.1);
-        —webkit-transform: scale(1.1);
-        —o-transform: scale(1.1);
         transform: scale(1.1);
     }
     .tab.active div{
@@ -1793,18 +1782,12 @@ and (min-width : 1224px) {
     }
     .tab.active div{
         transition: all 1s ease;
-            —moz-transition: all 1s ease;
-            —webkit-transition: all 1s ease;
-            —o-transition: all 1s ease;
     }
     /*-----------------------------------------------------------------------*/
     .tab.active .pointer{
         display: none;
     }
     .tab.active div:hover{
-        —moz-transform: scale(1.1);
-        —webkit-transform: scale(1.1);
-        —o-transform: scale(1.1);
         transform: scale(1.1);
     }
 
