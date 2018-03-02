@@ -3,12 +3,12 @@ var y = 0;
 do {
     alert('Enter the coordinates of the point');
     x = prompt('Input x: ', '');
-    x = parseInt(x);
+    x =parseFloat(x);
     if (isNaN(x)) {
         alert('Error. "x" should be number');
     } else {
         y = prompt('Input y: ', '');
-        y = parseInt(y);
+        y = parseFloat(y);
         if (isNaN(y)) {
             alert('Error. "y" should be number');
         }
